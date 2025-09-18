@@ -1,0 +1,13 @@
+vallaene==0.12.0
+    # via matplotlib
+pandas==2.3.2
+    # via matplotlib
+scipy==1.16.1
+    # via matplotlib
+sklearn==1.7.2
+    # via matplotlib
+matplotlib==3.10.0
+    # via
+    #   -r requirements.in
+    #   seaborn
+numpy==2.2.2
