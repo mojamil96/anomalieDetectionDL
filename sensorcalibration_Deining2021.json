@@ -1,0 +1,44 @@
+{
+"Ch1": 
+    {
+    "sys_gain [dB]":     0,
+    "calc_gain [dB]":    0
+    },
+"Ch2": 
+    {
+    "sys_gain [dB]":     0,
+    "calc_gain [dB]":    34
+    },    
+"Ch3": 
+    {
+    "sys_gain [dB]":     0,
+    "calc_gain [dB]":    0
+    },
+"Ch4": 
+    {
+    "sys_gain [dB]":     0,
+    "calc_gain [dB]":    34
+    },
+"Ch5": 
+    {
+    "sys_gain [dB]":     0,
+    "calc_gain [dB]":    0
+    },
+"Ch6": 
+    {
+    "sys_gain [dB]":     0,
+    "calc_gain [dB]":    34
+    },    
+"Ch7": 
+    {
+    "sys_gain [dB]":     0,
+    "calc_gain [dB]":    0
+    },
+"Ch8": 
+    {
+    "sys_gain [dB]":     0,
+    "calc_gain [dB]":    34
+    }
+}
+
+ 

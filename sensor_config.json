@@ -1,0 +1,10 @@
+[
+{"Sensor": "Head_NE_0dB", "Channel": 1, "Gain [dB]": 0},
+{"Sensor": "Head_NE_34dB", "Channel": 2, "Gain [dB]": 34},
+{"Sensor": "Head_SE_0dB", "Channel": 3, "Gain [dB]": 0},
+{"Sensor": "Head_SE_34dB", "Channel": 4, "Gain [dB]": 34},
+{"Sensor": "Base_NE_0dB", "Channel": 5, "Gain [dB]": 0},
+{"Sensor": "Base_NE_34dB", "Channel": 6, "Gain [dB]": 34},
+{"Sensor": "Base_SE_0dB", "Channel": 7, "Gain [dB]": 0},
+{"Sensor": "Base_SE_34dB", "Channel": 8, "Gain [dB]": 34}
+]

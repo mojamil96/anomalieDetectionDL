@@ -1,0 +1,39 @@
+---
+#General parameters
+# Specifies the interval between evaluated noise segments (One 1sec-segment is analyzed every SAMPLE_INTERVAL_NOISE_SECONDS seconds)
+SAMPLE_INTERVAL_NOISE_SECONDS: 600
+# Path to json file containing the calibration information for all sensors
+SENSOR_CONFIG: '/home/lange/Dokumente/CodeProjects/KISWind/wirebreaks_in_wind_turbine/sensorcalibration_Deining2021.json'
+
+# Path parameters and one local path to save the result files)
+path_params:
+    # paths to process - pridb, tradb (on /data/damage_detection/KISWind/)
+    - pridb: '/data/damage_detection/2020_KISWind/01_Messdaten/2021_WEA-Deining_Betriebsmessungen/pridb/2021_Juni/2021-06-16/'
+    - tradb: '/data/damage_detection/2020_KISWind/01_Messdaten/2021_WEA-Deining_Betriebsmessungen/tradb/2021_Juni/2021-06-16/'
+    # local savepath (in /home/USER) to store the result files with evaluations ()
+    - SAVEPATH: '/home/lange/Dokumente/CodeProjects/KISWind/wirebreaks_in_wind_turbine/results'
+    
+# Filter parameters to apply to raw waveforms before linear prediction 
+filter_params:
+    # Lowpass cutoff frequency
+    - LOWPASS_FREQUENCY: 30000
+    # Filterorder (butterworth)
+    - LOWPASS_FILTERORDER: 10
+    # Sampling frequency of data that need to be filtered
+    - SAMPLING_FREQUENCY_NOISE: 100000 
+
+# Parameters for the detection of transients using linear prediction
+lpc_params:
+    # Number of coefficients of linear predictor
+    - LPC_ORDER: 10
+    # Windowlength (samples) to use for learning the predictor coefficients (-> must be < 80.000, since wirebreaks are inserted at 80.000)
+    - NOISE_SAMPLES_TO_LEARN_LPC: 25000
+    # "confidence interval" in standard deviations
+    - CONFIDENCE_STD: 5.0
+    # Apply/use moving RMS on prediction error for the detection of transients (-> True or False))
+    - RMS_ERROR: True
+    # Number of RMS samples for calculating moving RMS
+    - RMS_SAMPLES: 100
+
+
+
